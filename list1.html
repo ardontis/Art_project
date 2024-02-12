@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    var age = 0;
+        
+    
+    function change_var (){
+            
+    age = age + 1 ;
+    document.getElementById("main").innerHTML = age;
+    }
+    var age1 = 0;
+        
+    
+    function change_var2 (){
+            
+    age1 = age1 + 1 ;
+    document.getElementById("main2").innerHTML = age1;
+    }
+    
+    var age3 = 0;
+        
+    
+    function change_var3 (){
+                
+    age3 = age3 + 1 ;
+    document.getElementById("main3").innerHTML = age3;
+    }
+</script>
+<p>this is the number of prople that are younger than 30: </p><p id="main">0</p>
+<p>this the amount of people that are 30 - 60 years old:</p><p id="main2">0</p>
+<p>this the amount of people that are older than 60 years old:</p><p id="main3">0</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+        <form name="form1" method="" action="">
+            <select name="list1" size="4" multiple>
+                <option onclick="change_var()"> younger than 30
+                <option onclick="change_var2()"> 30 - 60
+                <option onclick="change_var3()"> Older than 60
+            </select>
+        </form>    
+    </body>
+    <p>
+        <a href="index.html">About</a>
+</html>
